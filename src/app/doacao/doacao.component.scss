@@ -1,0 +1,73 @@
+/* doacao.component.css */
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #242222;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o elemento pai ocupe no mínimo a altura total da tela */
+    min-width: 100vw; /* Garante que o elemento pai ocupe no mínimo a largura total da tela */
+    background-color: #242222; /* Cor de fundo para combinar com o body */
+    color: #d8d5d5;
+    margin-top: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
+    margin-bottom: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
+    margin-left: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
+    margin-right: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
+    padding: 0; 
+  }
+  
+  form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #717171;
+    background-color: #353434;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 10 auto;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fe0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #a91616;
+  }
+  
+  .error p {
+    color: red;
+    font-size: 0.8rem;
+  }
+  

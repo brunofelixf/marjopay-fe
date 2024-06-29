@@ -1,0 +1,16 @@
+<!-- doacao.component.html -->
+<div class="container">
+    <form (ngSubmit)="processarDoacao()" #doacaoForm="ngForm">
+      <div>
+        <label for="valor">Valor da Doação:</label>
+        <input type="number" id="valor" name="valor" [(ngModel)]="doacao.valor" required #valor="ngModel">
+        <div *ngIf="valor.invalid && valor.touched" class="error">
+          <p *ngIf="valor.errors?.['required']">Valor é obrigatório.</p>
+        </div>
+      </div>
+      <div>
+      </div>
+      <button type="submit" [disabled]="!doacaoForm.valid">Doar</button>
+    </form>
+  </div>
+  

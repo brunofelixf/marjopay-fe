@@ -1,10 +1,13 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // Importe o FormsModule aqui
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, HttpClientModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
@@ -12,11 +15,19 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
 
+  constructor(private authService: AuthService, private router: Router) {}
+
   login() {
-    // Aqui você pode adicionar lógica para verificar as credenciais, fazer chamadas HTTP, etc.
-    console.log(`Tentativa de login com usuário: ${this.username} e senha: ${this.password}`);
-    // Exemplo simples: redirecionar para outra rota após o login
-    // this.router.navigate(['/dashboard']);
+    // this.authService.login(this.username, this.password).subscribe({
+    //   next: (response) => {
+    //     console.log('Login bem-sucedido', response);
+    //     this.router.navigate(['/doacao']);
+    //   },
+    //   error: (error) => {
+    //     console.error('Erro no login', error);
+    //     alert('Falha no login! Verifique suas credenciais e tente novamente.');
+    //   }
+    // });
   }
 }
 

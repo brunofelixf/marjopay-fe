@@ -22,7 +22,7 @@
         <label for="cpf">CPF:</label>
         <input type="text" id="cpf" name="cpf" [(ngModel)]="usuario.cpf" required pattern="\d{11}" #cpf="ngModel">
       </div>
-       <div *ngIf="cpf.invalid && (cpf.dirty || cpf.touched)" class="error">
+        <div *ngIf="cpf.invalid && (cpf.dirty || cpf.touched)" class="error">
             <p *ngIf="cpf.errors?.['required']">CPF é obrigatório.</p>
             <p *ngIf="cpf.errors?.['pattern']">CPF inválido.</p>
         </div>

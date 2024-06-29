@@ -1,0 +1,23 @@
+<!-- extrato-doacoes.component.html -->
+<div class="container">
+    <h2>Extrato de Doações</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Recebedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let doacao of doacoes">
+            <td>{{ doacao.data | date:'dd/MM/yyyy HH:mm' }}</td>
+            <td>{{ doacao.valor | currency:'BRL' }}</td>
+            <td>{{ doacao.doador }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
