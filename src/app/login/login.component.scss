@@ -1,0 +1,99 @@
+/* login.component.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    // background-color: #242222;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o elemento pai ocupe no mínimo a altura total da tela */
+    min-width: 100vw;
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0;
+    background-color: #242222;
+    color: #d8d5d5;
+  }
+/* Estilo para o formulário */
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #353434;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para os campos de entrada */
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilo para o botão de login */
+  form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #d01b1b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #a91616;
+  }
+  
+  /* Estilo opcional para o link de registro */
+  .register-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .register-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column; /* Alinha os links verticalmente */
+    align-items: center; /* Centraliza os links horizontalmente */
+    margin-top: 15px; /* Espaço acima dos links */
+  }
+  
+  .links a {
+    color: #cac8c7; /* Cor azul padrão para links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 5px 0; /* Espaçamento entre os links */
+    font-size: 12px; /* Tamanho da fonte */
+  }
+  
+  .links a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse para indicar clicabilidade */
+    color: #0056b3; /* Escurece a cor ao passar o mouse */
+  }
