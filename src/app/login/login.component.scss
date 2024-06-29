@@ -1,28 +1,31 @@
 /* login.component.css */
 body {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    // background-color: #242222;
     box-sizing: border-box;
+    background-color: #242222; /* Garante que a cor de fundo cubra toda a tela */
 }
 .container {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     min-height: 100vh; /* Garante que o elemento pai ocupe no mínimo a altura total da tela */
-    min-width: 100vw;
-    margin: 0; /* Remove a margem padrão do body */
-    padding: 0;
-    background-color: #242222;
+    min-width: 100vw; /* Garante que o elemento pai ocupe no mínimo a largura total da tela */
+    background-color: #242222; /* Cor de fundo para combinar com o body */
     color: #d8d5d5;
-  }
+    margin-top: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
+    margin-bottom: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
+    padding: 0; /* Remova qualquer padding que possa estar sendo aplicado */
+}
 /* Estilo para o formulário */
 form {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #717171;
     background-color: #353434;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

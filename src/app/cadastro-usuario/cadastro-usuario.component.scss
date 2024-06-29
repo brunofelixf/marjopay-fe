@@ -1,0 +1,96 @@
+/* cadastro-usuario.component.css */
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #242222; /* Garante que a cor de fundo cubra toda a tela */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #242222;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0;
+    color: #d8d5d5;
+  }
+  
+  form {
+    width: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #717171;
+    background-color: #353434;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="password"],
+  input[type="tel"] {
+      width: 100%;
+      padding: 6px;
+      margin: 3px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px; /* Arredonda os cantos dos campos de input */
+      box-sizing: border-box; /* Garante que padding não aumente a largura */
+      background-color: #f8f8f8; /* Cor de fundo clara para os campos */
+  }
+
+//   input[type="submit"] {
+//     width: 100%;
+//     background-color: #4CAF50;
+//     color: white;
+//     padding: 14px 20px;
+//     margin: 8px 0;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+// }
+  
+  form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #d01b1b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #a91616;
+  }
+
+// input[type="submit"]:hover {
+//     background-color: #45a049;
+// }
+
+/* Adiciona um pouco de espaço entre os labels e os inputs para melhorar a leitura */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d8d5d5; /* Cor clara para os labels para contraste com o fundo escuro */
+}

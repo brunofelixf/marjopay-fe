@@ -1,0 +1,33 @@
+<div class="container">
+    <form (ngSubmit)="cadastrarUsuario()">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" [(ngModel)]="usuario.nome" required>
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="usuario.email" required>
+      </div>
+      <div>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" [(ngModel)]="usuario.cpf" required>
+      </div>
+      <div>
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" [(ngModel)]="usuario.dataNascimento" required>
+      </div>
+      <div>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" [(ngModel)]="usuario.senha" required>
+      </div>
+      <div>
+        <label for="confirmarSenha">Confirmar Senha:</label>
+        <input type="password" id="confirmarSenha" name="confirmarSenha" [(ngModel)]="usuario.confirmarSenha" required>
+      </div>
+      <div>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" [(ngModel)]="usuario.telefone" required>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+</div>
