@@ -1,15 +1,25 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common'; // Importe o CommonModule
 
+interface Usuario {
+  nome: string;
+  email: string;
+  senha: string;
+  cpf: string;
+  dataNascimento: string;
+  telefone: string;
+  confirmarSenha: string;
+}
 @Component({
   selector: 'app-cadastro-usuario',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './cadastro-usuario.component.html',
   styleUrl: './cadastro-usuario.component.scss'
 })
 export class CadastroUsuarioComponent {
-  usuario = {
+  usuario: Usuario = {
     nome: '',
     email: '',
     senha: '',
@@ -20,11 +30,11 @@ export class CadastroUsuarioComponent {
   };
 
   cadastrarUsuario() {
-    // Aqui você pode implementar a lógica para enviar os dados para o backend ou para um serviço
+    if (this.usuario.senha !== this.usuario.confirmarSenha) {
+      alert('As senhas não coincidem!');
+      return;
+    }
     console.log('Dados do novo usuário:', this.usuario);
-    // Exemplo: chamar um serviço para enviar os dados para o backend
-    // this.usuarioService.cadastrarUsuario(this.usuario).subscribe(() => {
-    //   console.log('Usuário cadastrado com sucesso!');
-    // });
+    // Lógica para enviar os dados para o backend
   }
 }

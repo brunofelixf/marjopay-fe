@@ -18,6 +18,8 @@ body {
     color: #d8d5d5;
     margin-top: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
     margin-bottom: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
+    margin-left: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
+    margin-right: -10px; /* Remova qualquer margem que possa estar sendo aplicada */
     padding: 0; /* Remova qualquer padding que possa estar sendo aplicado */
 }
 /* Estilo para o formulário */
@@ -55,7 +57,7 @@ form {
     width: 100%;
     padding: 10px;
     margin-top: 30px;
-    background-color: #d01b1b;
+    background-color: #fe0000;
     color: white;
     border: none;
     border-radius: 10px;
@@ -99,4 +101,11 @@ form {
   .links a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse para indicar clicabilidade */
     color: #0056b3; /* Escurece a cor ao passar o mouse */
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }

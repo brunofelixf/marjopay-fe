@@ -1,5 +1,9 @@
 <div class="container">
+    
     <form (ngSubmit)="login()">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Logomarca">
+        </div>
         <div>
           <label for="username">Usuário:</label>
           <input type="text" id="username" name="username" [(ngModel)]="username" required>
@@ -10,8 +14,8 @@
         </div>
         <button type="submit">Entrar</button>
         <div class="links">
-            <a routerLink="/esqueceu-senha">Esqueceu a senha?</a>
-            <a routerLink="/cadastrar-usuario">Cadastrar usuário</a>
+            <a href="/esqueceu-senha">Esqueceu a senha?</a>
+            <a href="/cadastro-usuario">Cadastrar usuário</a>
         </div>
     </form>
 </div>
